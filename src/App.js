@@ -11,7 +11,10 @@ function App() {
   return (
     <FeedbackProvider>
       <Router>
-        <Header />
+        <Routes>
+          <Route exact path="/" element={<Header />} />
+        </Routes>
+
         <div className="container">
           <Routes>
             <Route
